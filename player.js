@@ -39,7 +39,7 @@ var parseNote = function(string) {
 //
 
 var parseSong = function(string) {
-  var noteStrings = string.split(' ');
+  var noteStrings = string.split(/\s+/);
   var notes = [];
 
   for (var i=0; i < noteStrings.length; i++) {
